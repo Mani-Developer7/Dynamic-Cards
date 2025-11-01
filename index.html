@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Dynamic Cards</title>
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <a href="#home" id="BtnAll">Home</a>
+            <a href="#about">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#electronics" id="BtnElectronics">Electronics</a>
+                    <a href="#fashion" id="BtnFashion">Fashion</a>
+                    <a href="#homekitchen" id="BtnHomeKitchen">Home & Kitchen</a>
+                    <a href="#sportsoutdoors" id="BtnSportsOutdoors">Sports & Outdoors</a>
+                    <a href="#beautycare" id="BtnBeautyPersonalCare">Beauty & Personal Care</a>
+                    <a href="#toysgames" id="BtnToysGames">Toys & Games</a>
+                    <a href="#automotive" id="BtnAutomotive">Automotive</a>
+                    <a href="#books" id="BtnBooks">Books</a>
+                    <a href="#healthfitness" id="BtnHealthFitness">Health & Fitness</a>
+                    <a href="#groceries" id="BtnGroceries">Groceries</a>
+                </div>
+            </div>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" id="searchInput" placeholder="Search for products..." name="search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div id="Container">
+        <h1>Modern Product Showcase</h1>
+        <div id="product-grid">
+
+        </div>
+    </div>
+
+
+    <script src="app.js" type="module"> </script>
+</body>
+
+</html>
